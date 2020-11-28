@@ -14,3 +14,6 @@ CONTEST_START_TIME = "startTime"
 
 #API ENDPOINT
 API_URL = "http://api.codercalendar.io/"
+
+#websites
+webList = ['codeforces','codechef','leetcode','atcoder']

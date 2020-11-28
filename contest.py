@@ -1,8 +1,6 @@
 import json
 import os
-import requests
 import discord
-import datetime
 import constant
 from discord.ext import commands
 

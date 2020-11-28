@@ -1,4 +1,4 @@
-from pymongo import *
+from pymongo import MongoClient
 
 def startDB():
   client = MongoClient('mongodb://127.0.0.1:27017/')
@@ -9,12 +9,12 @@ def startDB():
 def storeData(contestCollection,constestInfo):
   contestCollection.insert_one(constestInfo)
 
-mycol = startDB()
-try:
-  constestInfo = {"_id" : "www.google.com"}
-  storeData(mycol,constestInfo)
-except:
-  pass
+# mycol = startDB()
+# try:
+#   constestInfo = {"_id" : "www.google.com"}
+#   storeData(mycol,constestInfo)
+# except:
+#   pass
 
     # {
     #     "_id": "https://csacademy.com/contest/algorithms-2020-11-25-0",
